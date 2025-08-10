@@ -35,6 +35,9 @@
         <div class="leftSection">
           <p class="welcome">Welcome to my Portfolio</p>
           Hi I'm <span class="name">Ahmed Alam</span> Web Developer
+          <p class="top-text">
+             Design and develop professional, responsive websites that combine modern aesthetics with reliable functionality to deliver exceptional user experiences.
+          </p>
         </div>
         <div class="rightSection">
           <img src="images/profile-img.jfif" alt="" />
@@ -268,19 +271,20 @@
     </script>
 
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyZCoU2_oS4es1_rkiQ4_UBcpJICXNXo4gzDoZrz7AprUDkbzZbBy66KVkIXbrxq64N_w/exec";
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyZCoU2_oS4es1_rkiQ4_UBcpJICXNXo4gzDoZrz7AprUDkbzZbBy66KVkIXbrxq64N_w/exec";
       const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg")
+      const msg = document.getElementById("msg");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML= "Message sent successfully"
-            setTimeout(function(){
-              msg.innerHTML= ""
-            },5000)
-            form.reset()
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
       });
