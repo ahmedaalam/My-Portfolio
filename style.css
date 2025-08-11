@@ -83,6 +83,12 @@ body {
     font-weight: 400;
 }
 
+.container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .top-btn {
     background-color: #a060f3;
     color: #FFFFFF;
@@ -488,7 +494,6 @@ form .btn2{
     .firstSection {
         display: flex;
         flex-direction: column-reverse;
-        
     }
 
     .leftSection {
@@ -496,6 +501,7 @@ form .btn2{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 20px;
     }
 
     .top-text {
@@ -508,8 +514,6 @@ form .btn2{
         height: 250px;
         width: 250px;
         border-radius: 50%;
-        margin-bottom: 20px;
-        margin-top: 30px;
     }
 
     #About {
