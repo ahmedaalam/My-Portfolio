@@ -83,6 +83,27 @@ body {
     font-weight: 400;
 }
 
+.hire-btn {
+    background-color: #a060f3;
+    color: #FFFFFF;
+    display: inline-block;           
+    padding: 10px 20px;  
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.cv-btn {
+    background-color: #a060f3;
+    color: #FFFFFF;
+    display: inline-block;           
+    padding: 10px 20px;  
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
 .welcome {
     font-size: 1rem;
     padding-bottom: 10px;
