@@ -83,13 +83,13 @@ body {
     font-weight: 400;
 }
 
-.container {
+.buttons-container {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
 
-.top-btn {
+.top-button{
     background-color: #a060f3;
     color: #FFFFFF;
     display: inline-block;           
@@ -494,8 +494,6 @@ form .btn2{
     .firstSection {
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
     }
 
     .leftSection {
